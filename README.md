@@ -3,22 +3,34 @@
 Chương trình này thực hiện kiểm thử tự động cho một trang web giả lập hoặc thực tế. Các chức năng được kiểm tra bao gồm:
 
 Đăng nhập với tài khoản đúng và sai.
+
 Kiểm tra thông báo lỗi khi nhập thông tin đăng nhập không hợp lệ.
+
 Kiểm thử chức năng tìm kiếm.
+
 Chương trình sử dụng Selenium WebDriver với ngôn ngữ lập trình Java để điều khiển trình duyệt và thực hiện các thao tác kiểm thử.
 
 ## Cài đặt
 **Yêu cầu môi trường**
+
 Java Development Kit (JDK): 8 trở lên.
+
 Maven: Quản lý thư viện và phụ thuộc.
+
 Selenium WebDriver: Phiên bản phù hợp với trình duyệt.
+
 Trình duyệt: Chrome (hoặc các trình duyệt khác hỗ trợ Selenium).
+
 **Bước cài đặt**
+
 Clone dự án:
 
 git clone https://github.com/your-repo/selenium-test.git
+
 cd selenium-test
+
 **Cài đặt thư viện:**
+
 Đảm bảo tệp pom.xml chứa cấu hình sau:
 <dependencies>
     <dependency>
@@ -27,12 +39,15 @@ cd selenium-test
         <version>4.9.0</version>
     </dependency>
 </dependencies>
+
 **Chạy lệnh Maven:**
 
 mvn clean install
+
 **Tải và cấu hình ChromeDriver:**
 
 Tải ChromeDriver từ: https://chromedriver.chromium.org/downloads.
+
 Đặt đường dẫn đến tệp chromedriver trong code:
 
 System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
